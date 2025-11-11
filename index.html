@@ -20,6 +20,9 @@
             flex-direction: column;
             align-items: center;
             min-height: 100vh;
+            
+            /* KAYMA SORUNUNU ÇÖZEN KOD: Sayfanın yatayda taşmasını engeller */
+            overflow-x: hidden; 
         }
 
         /* ANA KAPSAYICI (Tüm İçeriği Sarar) */
@@ -28,6 +31,8 @@
             max-width: 1000px;
             margin-top: 20px;
             margin-bottom: 20px;
+            /* Yine de bir güvenlik önlemi: Kapsayıcının kendisi de taşmasın */
+            box-sizing: border-box; 
         }
 
         /* ÜST BAŞLIK ALANI */
@@ -96,6 +101,7 @@
             backdrop-filter: blur(8px);
             padding: 20px;
             min-height: 400px;
+            box-sizing: border-box; /* İç padding genişliğe dahil olsun */
         }
 
         /* YAZI STİLLERİ */
@@ -145,11 +151,11 @@
     <div class="wrapper">
         <header class="site-header">
             <h1>Nostalji Merkezi</h1>
-            <p>Eskilere bir yolculuk...</p>
+            <p>Eskilere bir yolculuk</p>
         </header>
 
         <nav class="navbar">
-            <a href="index.html"> </a>
+            <a href="index.html">Ana Sayfa</a>
             <a href="market.html">Market</a>
             <a href="sosyal.html">Sosyal Medya Hesaplarımız</a>
             <a href="https://archive.org/" target="_blank">Zaman Makinesi</a>
@@ -189,7 +195,7 @@
         </div>
 
         <footer class="site-footer">
-            <p>Proudly powered by <a href="index.html">Nostalji Merkezi</a> | Theme: Frutiger Aero v7.4 (Turnstile Eklendi)</p>
+            <p>Zaman çok hızlı geçiyor... <a href="index.html">Nostalji Merkezi</a> | Theme: Frutiger Aero v7.5 (Mobil Kayma Sorunu Çözüldü)</p>
         </footer>
     </div>
 
