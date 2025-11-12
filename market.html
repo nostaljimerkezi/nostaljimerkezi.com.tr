@@ -43,19 +43,27 @@
         background-color: rgba(255, 255, 255, 0.7);
         /* BURAYA -webkit- eklendi */
         -webkit-backdrop-filter: blur(8px);
-        backdrop-filter: blur(8px);
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        border-bottom: none;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        display: flex;
-        justify-content: flex-start;
-        overflow: hidden;
-        margin-top: 10px;
-        /* Yatay kaydırmayı etkinleştirelim ki, mobil görünümde taşma olmasın */
-        overflow-x: auto;
-        white-space: nowrap;
+        /* NAVİGASYON (MENÜ) */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.7);
+    /* Mobil/Chrome desteği için -webkit- eklendi */
+    -webkit-backdrop-filter: blur(8px); 
+    backdrop-filter: blur(8px); [span_0](start_span)/* Standart kural[span_0](end_span) */
+    border-top-left-radius: 10px; 
+    /* ... diğer stiller ... */
+}
+
+/* İÇERİK ALANI (Makaleler) - TAM GENİŞLİK */
+.content-area {
+    /* ... diğer stiller ... */
+    background-color: rgba(173, 216, 230, 0.8); 
+    /* Mobil/Chrome desteği için -webkit- eklendi */
+    -webkit-backdrop-filter: blur(8px); 
+    backdrop-filter: blur(8px); [span_1](start_span)/* Standart kural[span_1](end_span) */
+    padding: 20px;
+    /* ... diğer stiller ... */
+}
+        
     }
     .navbar a {
         padding: 10px 15px;
