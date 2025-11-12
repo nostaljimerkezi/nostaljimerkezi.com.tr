@@ -1,28 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-	<title></title>
-	<meta name="generator" content="LibreOffice 24.8.1.2 (Linux)"/>
-	<meta name="created" content="00:00:00"/>
-	<meta name="changed" content="00:00:00"/>
-	<style type="text/css">
-		@page { size: 8.27in 11.69in; margin: 0.79in }
-		p { line-height: 115%; margin-bottom: 0.1in; background: transparent }
-		pre { background: transparent }
-		pre.western { font-family: "Liberation Mono", monospace; font-size: 10pt }
-		pre.cjk { font-family: "NSimSun", monospace; font-size: 10pt }
-		pre.ctl { font-family: "Liberation Mono", monospace; font-size: 10pt }
-	</style>
-</head>
-<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><pre class="western">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;tr&quot;&gt;
-&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-    &lt;title&gt;Nostalji Merkezi - Market&lt;/title&gt;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostalji Merkezi - Market</title>
     
-    &lt;style&gt;
+    <style>
         /* GENEL STİLLER */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -36,7 +19,7 @@
             align-items: center;
             min-height: 100vh;
             
-            /* DÜZELTME 1: Kaydırma sorununu temelden çözer */
+            /* Mobil kayma düzeltmesi */
             overflow-x: hidden; 
         }
 
@@ -46,7 +29,7 @@
             max-width: 1000px;
             margin-top: 20px;
             margin-bottom: 20px;
-             /* DÜZELTME 2: Taşmayı engellemek için eklendi */
+            /* Mobil kayma düzeltmesi */
             overflow-x: hidden; 
         }
 
@@ -75,7 +58,6 @@
             /* Yatay kaydırmayı etkinleştirelim ki, mobil görünümde taşma olmasın */
             overflow-x: auto; 
             white-space: nowrap; 
-            /* DÜZELTME 3: Ekstra boşluğu engeller */
             width: 100%;
             box-sizing: border-box;
         }
@@ -100,7 +82,7 @@
             border-bottom-right-radius: 10px;
             overflow: hidden;
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-            width: 100%; /* İçeriğin kapsayıcıya sığmasını garanti eder */
+            width: 100%;
         }
 
         /* KENAR ÇUBUĞU GİZLİ */
@@ -120,7 +102,7 @@
             backdrop-filter: blur(8px);
             padding: 20px;
             min-height: 400px;
-            box-sizing: border-box; /* Padding'in genişliğe dahil olmasını sağlar */
+            box-sizing: border-box;
         }
 
         /* YAZI STİLLERİ */
@@ -131,7 +113,7 @@
             border-radius: 8px;
             border: 1px solid rgba(255, 255, 255, 0.4);
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-            /* DÜZELTME 4: İçerik taşmasını engeller */
+            /* İçerik taşmasını engeller */
             word-wrap: break-word; 
             overflow: hidden; 
         }
@@ -206,97 +188,92 @@
             display: flex;
             align-items: center;
         }
-    &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
+    </style>
+</head>
+<body>
 
-    &lt;div class=&quot;wrapper&quot;&gt;
-        &lt;header class=&quot;site-header&quot;&gt;
-            &lt;h1&gt;Nostalji Merkezi&lt;/h1&gt;
-            &lt;p&gt;Computer aesthetic of the early 2000s&lt;/p&gt;
-        &lt;/header&gt;
+    <div class="wrapper">
+        <header class="site-header">
+            <h1>Nostalji Merkezi</h1>
+            <p>Computer aesthetic of the early 2000s</p>
+        </header>
 
-        &lt;nav class=&quot;navbar&quot;&gt;
-            &lt;a href=&quot;index.html&quot;&gt;Ana Sayfa&lt;/a&gt;
-            &lt;a href=&quot;market.html&quot;&gt;Market&lt;/a&gt; 
-            &lt;a href=&quot;https://linktr.ee/nostaljimerkezi&quot; target=&quot;_blank&quot;&gt;Sosyal Medya Hesaplarımız&lt;/a&gt;
-            &lt;a href=&quot;https://archive.org/&quot; target=&quot;_blank&quot;&gt;Zaman Makinesi&lt;/a&gt;
-            &lt;a href=&quot;#link_uygulama_magazasi&quot;&gt;Uygulama Mağazası&lt;/a&gt;
-            &lt;a href=&quot;https://chat.whatsapp.com/Hz8bSAxZ4uoEOJEoKte3Rf?mode=wwt&quot; target=&quot;_blank&gt;WhatsApp Grubumuz&lt;/a&gt;
-            &lt;a href=&quot;#link_dahasi&quot;&gt;Dahası&lt;/a&gt;
-        &lt;/nav&gt;
+        <nav class="navbar">
+            <a href="index.html">Ana Sayfa</a>
+            <a href="market.html">Market</a> 
+            <a href="https://linktr.ee/nostaljimerkezi" target="_blank">Sosyal Medya Hesaplarımız</a>
+            <a href="https://archive.org/" target="_blank">Zaman Makinesi</a>
+            <a href="#link_uygulama_magazasi">Uygulama Mağazası</a>
+            <a href="https://chat.whatsapp.com/Hz8bSAxZ4uoEOJEoKte3Rf?mode=wwt" target="_blank">WhatsApp Grubumuz</a>
+            <a href="#link_dahasi">Dahası</a>
+        </nav>
 
-        &lt;div class=&quot;content-and-sidebar-container&quot;&gt;
+        <div class="content-and-sidebar-container">
             
-            &lt;div class=&quot;sidebar&quot;&gt;
-            &lt;/div&gt;
+            <div class="sidebar">
+            </div>
 
-            &lt;div class=&quot;content-area&quot;&gt;
+            <div class="content-area">
                 
-                &lt;!-- ******* YENİ DUYURU BURADA BAŞLIYOR (Fiziksel Mağaza) ******* --&gt;
-                &lt;div class=&quot;post&quot;&gt;
-                    &lt;h2 style=&quot;color: #cc0000;&quot;&gt;🚨 YAKINDA: FİZİKSEL MAĞAZALARIMIZ GELİYOR!&lt;/h2&gt;
-                    &lt;p&gt;Online mağazalarımıza gösterdiğiniz yoğun ilgi için teşekkür ederiz! Artık o nostaljik eşyalara &lt;strong&gt;dokunabilmeniz, hissedebilmeniz&lt;/strong&gt; ve yerinde inceleyebilmeniz için büyük bir adım atıyoruz!&lt;/p&gt;
+                <div class="post">
+                    <h2 style="color: #cc0000;">🚨 YAKINDA: FİZİKSEL MAĞAZALARIMIZ GELİYOR!</h2>
+                    <p>Online mağazalarımıza gösterdiğiniz yoğun ilgi için teşekkür ederiz! Artık o nostaljik eşyalara <strong>dokunabilmeniz, hissedebilmeniz</strong> ve yerinde inceleyebilmeniz için büyük bir adım atıyoruz!</p>
                     
-                    &lt;p style=&quot;font-weight: bold; color: #0078d4;&quot;&gt;✨ İlk fiziksel mağazamızın açılış tarihi ve yeri çok yakında web sitemizde ve sosyal medya hesaplarımızda duyurulacaktır. Takipte kalın!&lt;/p&gt;
+                    <p style="font-weight: bold; color: #0078d4;">✨ İlk fiziksel mağazamızın açılış tarihi ve yeri çok yakında web sitemizde ve sosyal medya hesaplarımızda duyurulacaktır. Takipte kalın!</p>
                     
-                    &lt;p&gt;&lt;em&gt;Bilgisayar estetiğini yansıtan ürünler ve özel etkinliklerle dolu bir deneyime hazır olun!&lt;/em&gt;&lt;/p&gt;
-                &lt;/div&gt;
-                &lt;!-- ******* YENİ DUYURU BURADA BİTİYOR ******* --&gt;
-
-                &lt;div class=&quot;post&quot;&gt;
-                    &lt;h2&gt;🛒 Nostalji Merkezi Sanal Mağazaları&lt;/h2&gt;
-                    &lt;p&gt;En sevdiğin nostaljik ürünlere kolayca ulaşmak için aşağıdaki platformlardan birini seçebilirsin:&lt;/p&gt;
+                    <p><em>Bilgisayar estetiğini yansıtan ürünler ve özel etkinliklerle dolu bir deneyime hazır olun!</em></p>
+                </div>
+                <div class="post">
+                    <h2>🛒 Nostalji Merkezi Sanal Mağazaları</h2>
+                    <p>En sevdiğin nostaljik ürünlere kolayca ulaşmak için aşağıdaki platformlardan birini seçebilirsin:</p>
                     
-                    &lt;div class=&quot;market-buttons&quot;&gt;
-                        &lt;a href=&quot;https://www.gardrops.com/nostaljimerkezi&quot; target=&quot;_blank&quot;&gt;Gardrops&lt;/a&gt;
-                        &lt;a href=&quot;https://link.dolap.com/dewzss&quot; target=&quot;_blank&quot;&gt;Dolap&lt;/a&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
+                    <div class="market-buttons">
+                        <a href="https://www.gardrops.com/nostaljimerkezi" target="_blank">Gardrops</a>
+                        <a href="https://link.dolap.com/dewzss" target="_blank">Dolap</a>
+                    </div>
+                </div>
 
-                &lt;div class=&quot;post&quot;&gt;
-                    &lt;h2&gt;Neden Nostalji Merkezi'ni Tercih Etmelisiniz?&lt;/h2&gt;
+                <div class="post">
+                    <h2>Neden Nostalji Merkezi'ni Tercih Etmelisiniz?</h2>
                     
-                    &lt;div class=&quot;highlight-box&quot;&gt;
-                        &lt;h3&gt;🌐 Türkiye ve KKTC Çapında Gönderim&lt;/h3&gt;
-                        &lt;p&gt;Türkiyenin neresinde olursanız olun, alışverişlerinize ulaşmanızı sağlayan gönderim kolaylığının keyfini çıkarın.&lt;/p&gt;
-                    &lt;/div&gt;
+                    <div class="highlight-box">
+                        <h3>🌐 Türkiye ve KKTC Çapında Gönderim</h3>
+                        <p>Türkiyenin neresinde olursanız olun, alışverişlerinize ulaşmanızı sağlayan gönderim kolaylığının keyfini çıkarın.</p>
+                    </div>
 
-                    &lt;div class=&quot;highlight-box&quot;&gt;
-                        &lt;h3&gt;♻️ Çevre Dostu&lt;/h3&gt;
-                        &lt;p&gt;Siparişlerinizin en yakın lokasyondan yapılıp gönderilmesini sağlamak, karbon emisyonlarını en aza indirmek ve sürdürülebilirliği artırmak için talep üzerine tedarik merkezleri ve tedarikçilerden oluşan küresel bir ağ ile ortaklık kuruyoruz.&lt;/p&gt;
-                    &lt;/div&gt;
+                    <div class="highlight-box">
+                        <h3>♻️ Çevre Dostu</h3>
+                        <p>Siparişlerinizin en yakın lokasyondan yapılıp gönderilmesini sağlamak, karbon emisyonlarını en aza indirmek ve sürdürülebilirliği artırmak için talep üzerine tedarik merkezleri ve tedarikçilerden oluşan küresel bir ağ ile ortaklık kuruyoruz.</p>
+                    </div>
 
-                    &lt;div class=&quot;highlight-box&quot;&gt;
-                        &lt;h3&gt;⭐ Eşsiz Kalite&lt;/h3&gt;
-                        &lt;p&gt;Üstün kalite ve kalıcı güvenilirliği garanti altına almalmakak için titizlikle hazırlanmış ürünlerimizle en yüksek mükemmellik standardını deneyimleyin.&lt;/p&gt;
-                    &lt;/div&gt;
+                    <div class="highlight-box">
+                        <h3>⭐ Eşsiz Kalite</h3>
+                        <p>Üstün kalite ve kalıcı güvenilirliği garanti altına almalmakak için titizlikle hazırlanmış ürünlerimizle en yüksek mükemmellik standardını deneyimleyin.</p>
+                    </div>
 
-                    &lt;div class=&quot;highlight-box&quot;&gt;
-                        &lt;h3&gt;🚚 Hızlı Gönderim (Sadece Türkiye'ye Garanti Veriyoruz)&lt;/h3&gt;
-                        &lt;p&gt;&lt;strong&gt;Türkiye:&lt;/strong&gt; 1 iş günü içerisinde kargolanır, 1-3 iş günü içerisinde adresinize teslim edilir.&lt;/p&gt;
-                        &lt;p&gt;&lt;strong&gt;KKTC:&lt;/strong&gt; 1 iş günü içerisinde kargolanır, Teslimat Süresi Türkiye çıkışından itibaren 1-6 iş günüdür.&lt;/p&gt;
-                    &lt;/div&gt;
+                    <div class="highlight-box">
+                        <h3>🚚 Hızlı Gönderim (Sadece Türkiye'ye Garanti Veriyoruz)</h3>
+                        <p><strong>Türkiye:</strong> 1 iş günü içerisinde kargolanır, 1-3 iş günü içerisinde adresinize teslim edilir.</p>
+                        <p><strong>KKTC:</strong> 1 iş günü içerisinde kargolanır, Teslimat Süresi Türkiye çıkışından itibaren 1-6 iş günüdür.</p>
+                    </div>
                     
-                    &lt;div class=&quot;highlight-box&quot;&gt;
-                        &lt;h3&gt;💸 Ucuz Fiyatlı&lt;/h3&gt;
-                        &lt;p&gt;Ürünlerimiz, kaliteden ödün vermeden bütçe dostu seçenekler sunar. Herkesin erişebileceği uygun fiyatlarla, kaliteli alışveriş deneyimi yaşayın.&lt;/p&gt;
-                    &lt;/div&gt;
+                    <div class="highlight-box">
+                        <h3>💸 Ucuz Fiyatlı</h3>
+                        <p>Ürünlerimiz, kaliteden ödün vermeden bütçe dostu seçenekler sunar. Herkesin erişebileceği uygun fiyatlarla, kaliteli alışveriş deneyimi yaşayın.</p>
+                    </div>
 
-                    &lt;div class=&quot;highlight-box&quot;&gt;
-                        &lt;h3&gt;📦 Çok Fazla Teslim Seçeneği&lt;/h3&gt;
-                        &lt;p&gt;Dilerseniz elden teslim, kapıda ödeme veya online ödeme imkanlarıyla alışverişinizi tamamlayabilirsiniz.&lt;/p&gt;
-                    &lt;/div&gt;
+                    <div class="highlight-box">
+                        <h3>📦 Çok Fazla Teslim Seçeneği</h3>
+                        <p>Dilerseniz elden teslim, kapıda ödeme veya online ödeme imkanlarıyla alışverişinizi tamamlayabilirsiniz.</p>
+                    </div>
 
-                &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
+                </div>
+            </div>
+        </div>
 
-        &lt;footer class=&quot;site-footer&quot;&gt;
-            &lt;p&gt;Proudly powered by &lt;a href=&quot;index.html&quot;&gt;Nostalji Merkezi&lt;/a&gt; | Theme: Frutiger Aero v7.0 (Market Tamamlandı)&lt;/p&gt;
-        &lt;/footer&gt;
-    &lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;</pre>
+        <footer class="site-footer">
+            <p>Proudly powered by <a href="index.html">Nostalji Merkezi</a> | Theme: Frutiger Aero v7.0 (Market Tamamlandı)</p>
+        </footer>
+    </div>
 </body>
 </html>
