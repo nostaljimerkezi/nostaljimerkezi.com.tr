@@ -6,7 +6,7 @@
     <title>Nostalji Merkezi - Sosyal Medya Hesaplarımız</title>
     
     <style>
-        /* GENEL STİLLER (index.html'den kopyalanan tüm CSS) */
+        /* GENEL STİLLER */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             /* GRADYANLI ARKA PLAN: Açık Turkuazdan Açık Yeşile yumuşak geçiş */
@@ -26,6 +26,8 @@
             max-width: 1000px;
             margin-top: 20px;
             margin-bottom: 20px;
+            /* DÜZELTME: Mobil kaymayı engellemek için */
+            overflow-x: hidden;
         }
 
         /* ÜST BAŞLIK ALANI */
@@ -40,6 +42,9 @@
         /* NAVİGASYON (MENÜ) */
         .navbar {
             background-color: rgba(255, 255, 255, 0.7);
+            /* DÜZELTME: Frutiger Aero için -webkit- ve position eklendi */
+            position: relative; 
+            -webkit-backdrop-filter: blur(8px);
             backdrop-filter: blur(8px);
             border-top-left-radius: 10px; 
             border-top-right-radius: 10px;
@@ -50,7 +55,6 @@
             justify-content: flex-start;
             overflow: hidden;
             margin-top: 10px;
-            /* Yatay kaydırmayı etkinleştirelim ki, mobil görünümde taşma olmasın */
             overflow-x: auto; 
             white-space: nowrap; 
         }
@@ -91,6 +95,9 @@
             flex: 4; 
             width: 100%; 
             background-color: rgba(173, 216, 230, 0.8); 
+            /* DÜZELTME: Frutiger Aero için -webkit- ve position eklendi */
+            position: relative; 
+            -webkit-backdrop-filter: blur(8px);
             backdrop-filter: blur(8px);
             padding: 20px;
             min-height: 400px;
@@ -134,9 +141,9 @@
                 width: 100%; 
                 box-sizing: border-box;
             }
-            .wrapper { overflow-x: hidden; }
+            /* .wrapper { overflow-x: hidden; } ARTIK YUKARIDA VAR */
         }
-
+        
         /* SOSYAL MEDYA SAYFASI EK STİLLERİ */
         .social-buttons {
             display: flex;
@@ -163,6 +170,21 @@
             transform: translateY(-2px);
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
         }
+        /* UYARI KUTUSU STİLİ */
+        .warning-box {
+            background-color: rgba(255, 165, 0, 0.3); /* Yarı şeffaf Turuncu */
+            border: 1px solid orange;
+            border-left: 5px solid darkorange;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            color: #4a2c00;
+        }
+        .warning-box strong {
+            color: #cc5500;
+        }
+
     </style>
 </head>
 <body>
@@ -170,11 +192,11 @@
     <div class="wrapper">
         <header class="site-header">
             <h1>Nostalji Merkezi</h1>
-            <p>Anılarına Bir Ziyaret.</p>
+            <p>Computer aesthetic of the early 2000s</p>
         </header>
 
         <nav class="navbar">
-            <a href="index.html">Ana Sayfa</a>
+            <a href="index.html"> </a>
             <a href="market.html">Market</a>
             <a href="sosyal.html">Sosyal Medya Hesaplarımız</a> 
             <a href="https://archive.org/" target="_blank">Zaman Makinesi</a>
@@ -202,6 +224,14 @@
                         <a href="https://www.instagram.com/nostaljimerkezi.com.tr?igsh=Z3c2dG50OWM5bml0" target="_blank">
                             Instagram Hesabımız
                         </a>
+                        
+                        <a href="https://yaay.com.tr/profile/NostalgiaTR" target="_blank">
+                            Yaay Hesabımız (YENİ)
+                        </a>
+                        
+                        <a href="https://merkezsosyal.apk.com/" target="_blank">
+                            MERKEZ SOSYAL (YENİ)
+                        </a>
 
                         <a href="https://youtube.com/@nostaljimerkezi_tr?si=2m_ze8f5iPO-y6lx" target="_blank">
                             YouTube Kanalımız
@@ -215,13 +245,24 @@
                             Twitter (X) Hesabımız
                         </a>
                     </div>
+                    
+                    <div class="warning-box">
+                        <strong>⚠️ ÖNEMLİ DUYURU: Taklit Hesaplara Dikkat!</strong>
+                        <p>
+                            Yukarıda listelenenler dışında Nostalji Merkezi'ne ait **başka hiçbir sosyal medya hesabı yoktur.** İnternet üzerinde gördüğünüz veya size mesaj atan diğer hesaplar (Instagram, TikTok, X, vb.) **taklit, dolandırıcılık veya kandırma amaçlıdır.**
+                        </p>
+                        <p>
+                            Eğer bu listenin dışında bir taklit hesap bulursanız, lütfen **müdahale etmeyin** (yorum yazmayın, tartışmayın). Tek yapmanız gereken, o profilin bağlantısını bize iletmektir. Böylece gerekli yasal işlemleri başlatabiliriz. Güvenliğiniz bizim için önemlidir!
+                        </p>
+                    </div>
+
                 </div>
 
             </div>
         </div>
 
         <footer class="site-footer">
-            <p>Proudly powered by <a href="index.html">Nostalji Merkezi</a> | Theme: Frutiger Aero v7.2 (Tüm Sosyal Medya Eklendi)</p>
+            <p>Proudly powered by <a href="index.html">Nostalji Merkezi</a> | Theme: Frutiger Aero v7.2 (Sosyal Medya Güncellemesi)</p>
         </footer>
     </div>
 </body>
