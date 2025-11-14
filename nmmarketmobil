@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostalji Merkezi - Mobil Market</title>
+    
+    <style>
+        /* GENEL VE ARKA PLAN STİLLERİ (Frutiger Aero) */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom right, #a0e6ff, #5cd1a0); 
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; 
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* ANA KAPSAYICI (Uygulama Ekranı gibi) */
+        .app-screen {
+            width: 100%;
+            max-width: 450px; 
+            min-height: 100vh;
+            background-color: rgba(255, 255, 255, 0.7); 
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* BAŞLIK ALANI */
+        .app-header {
+            color: #0078d4;
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid rgba(0, 120, 212, 0.3); 
+            padding-bottom: 15px;
+            width: 100%;
+        }
+        .app-header h1 { 
+            margin: 0; 
+            font-size: 1.8em;
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+        }
+        .app-header p { 
+            margin: 5px 0 0 0; 
+            font-size: 0.9em; 
+            opacity: 0.8; 
+            color: #333;
+        }
+
+        /* KART/ÖZELLİK KAPSAYICISI */
+        .feature-grid {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr; 
+            gap: 15px;
+            padding: 0 10px;
+        }
+
+        /* ÖZELLİK KARTI STİLİ */
+        .feature-card {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.5); /* Yarı şeffaf arka plan */
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1), inset 0 0 8px rgba(255, 255, 255, 0.5);
+            transition: all 0.2s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .feature-card h2 {
+            margin-top: 0;
+            color: #0078d4;
+            font-size: 1.5em;
+            border-bottom: 1px dashed rgba(0, 120, 212, 0.5);
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        .feature-card p {
+            font-size: 0.9em;
+            line-height: 1.4;
+        }
+
+        /* MAĞAZAYA GİT BUTONU */
+        .shop-button {
+            display: block;
+            margin: 30px 10px 0 10px;
+            padding: 15px 25px;
+            background: linear-gradient(145deg, #FFC107, #FF9800); /* Turuncu/Sarı Gradient (Alışveriş rengi) */
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), inset 0 0 10px rgba(255, 255, 255, 0.7);
+            transition: all 0.3s ease;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+        }
+        .shop-button:hover {
+            background: linear-gradient(145deg, #FF9800, #F57C00);
+            transform: translateY(-2px);
+        }
+        
+        /* FOOTER */
+        .app-footer {
+            margin-top: auto; 
+            padding-top: 20px;
+            text-align: center;
+            font-size: 0.8em;
+            color: #555;
+            opacity: 0.7;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="app-screen">
+        
+        <div class="app-header">
+            <h1>🛒 Nostalji Merkezi Market</h1>
+            <p>Alışverişin en kolay ve güvenilir yolu!</p>
+        </div>
+
+        <div class="feature-grid">
+            
+            <div class="feature-card">
+                <h2>⭐ Üstün Kalite Garantisi</h2>
+                <p>Ürünlerimiz, üstün kalite ve kalıcı güvenilirliği sağlamak için titizlikle hazırlanmıştır. En yüksek mükemmellik standardını deneyimleyin.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h2>🚚 Hızlı Gönderim</h2>
+                <p><strong>Türkiye:</strong> 1 iş günü içerisinde kargolanır, 1-3 iş günü içerisinde adresinize teslim edilir.</p>
+                <p><strong>KKTC:</strong> 1-6 iş günü içerisinde adresinize ulaşır.</p>
+            </div>
+
+            <div class="feature-card">
+                <h2>💸 Bütçe Dostu Fiyatlar</h2>
+                <p>Kaliteden ödün vermeden, herkesin erişebileceği uygun fiyatlarla alışveriş deneyimi yaşayın. Ürünlerimiz bütçe dostudur.</p>
+            </div>
+
+            <div class="feature-card">
+                <h2>📦 Çoklu Teslim Seçeneği</h2>
+                <p>Elden teslim, kapıda ödeme veya online ödeme imkanlarıyla alışverişinizi dilediğiniz gibi tamamlayın.</p>
+            </div>
+
+        </div>
+
+        <a href="[ASIL MARKET LİNKİNİ BURAYA YAZ]" class="shop-button" target="_blank">
+            Hemen Mağazaya Git!
+        </a>
+        
+        <div class="app-footer">
+            <p>Nostalji Merkezi Market Mobil Sürüm 1.0.</p>
+        </div>
+    </div>
+
+</body>
+</html>
