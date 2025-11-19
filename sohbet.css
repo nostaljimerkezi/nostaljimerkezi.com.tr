@@ -1,0 +1,36 @@
+/* MON PET (Tamagotchi) için kullanılan renkler */
+:root {
+  --frutiger-aero-primary: #0078d4; /* Ana Mavi */
+  --frutiger-aero-background: rgba(255, 255, 255, 0.7); /* Şeffaf Beyaz */
+  --frutiger-aero-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Ana Sohbet Kutusu Kapsayıcısı */
+#chat-frame {
+  border-radius: 15px !important;
+  box-shadow: var(--frutiger-aero-shadow) !important;
+}
+
+/* Mesaj Giriş Alanı ve Başlıklar */
+.chat-header, .message-input-area {
+  background: var(--frutiger-aero-background) !important;
+  backdrop-filter: blur(8px) !important; /* Cam efekti */
+  -webkit-backdrop-filter: blur(8px) !important; /* Webkit tarayıcılar için */
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Gönderme Butonları ve Etkileşimli Öğeler */
+button, .send-button {
+  background-color: var(--frutiger-aero-primary) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1) !important;
+  transition: all 0.2s ease;
+}
+
+/* Mesaj Balonları (Gelen/Giden) */
+.message-bubble {
+  border-radius: 12px 12px 12px 5px !important;
+  /* Hafif şeffaflık ve yumuşak gölge ekler */
+  background-color: rgba(255, 255, 255, 0.6) !important; 
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
