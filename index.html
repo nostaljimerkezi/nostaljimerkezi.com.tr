@@ -149,6 +149,16 @@
                 box-sizing: border-box;
             }
         }
+        
+        /* CHATABLE WIDGET POZİSYON DÜZELTMESİ (SOL ALT) */
+        .chattable-widget-container {
+            right: auto !important; /* Sağdaki ayarı iptal et */
+            left: 20px !important;  /* Soldan 20 piksel boşluk bırakarak SOLA sabitle */
+            bottom: 20px !important; /* Alttan 20 piksel boşluk bırak */
+            z-index: 9998 !important; 
+        }
+        /* CHATABLE CSS BİTİŞ */
+        
     </style>
 </head>
 <body>
@@ -200,30 +210,19 @@
         </div>
 
         <footer class="site-footer">
-            <p>Zaman çok hızlı geçiyor... <a href="index.html">Nostalji Merkezi</a> | Theme: Frutiger Aero v7.6 (Canlı Destek Eklendi)</p>
+            <p>
+                <a href="gizlilik.html">Gizlilik Politikası</a> | Zaman çok hızlı geçiyor... <a href="index.html">Nostalji Merkezi</a> | Theme: Frutiger Aero v7.6 (Canlı Destek Eklendi)
+            </p>
         </footer>
     </div>
 
 <script src="https://iframe.chat/scripts/main.min.js"></script>
 <script>
-    // Chatable'ı pop-up (widget) modunda başlatır
-    // '13523728' senin Chat ID'n olarak kullanılmıştır.
     chattable.initialize({
         chat: 13523728, 
-        theme: "moderno" // Temayı daha sonra Chatable panelinden Frutiger Aero CSS ile özelleştirebilirsin.
+        theme: "moderno" 
     });
 </script>
-
-<style>
-    /* Chatable'ın widget'ı için varsayılan sağ pozisyonunu sola çeker */
-    /* !important kullanarak Chatable'ın varsayılan stilini eziyoruz. */
-    .chattable-widget-container {
-        right: auto !important; /* Sağdaki ayarı iptal et */
-        left: 20px !important;  /* Soldan 20 piksel boşluk bırakarak SOLA sabitle */
-        bottom: 20px !important; /* Alttan 20 piksel boşluk bırak */
-        z-index: 9998 !important; /* Tawk.to ile çakışmaması için uygun bir z-index */
-    }
-</style>
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
